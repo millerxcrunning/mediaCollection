@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miller_1181_project2.FXMLDocumentController">
+   <children>
+      <ListView fx:id="listView" layoutX="7.0" layoutY="6.0" prefHeight="443.0" prefWidth="382.0" />
+      <Pane layoutX="404.0" layoutY="10.0" prefHeight="436.0" prefWidth="258.0">
+         <children>
+            <Pane layoutX="29.0" layoutY="218.0" prefHeight="98.0" prefWidth="200.0" style="-fx-border-width: 1; -fx-border-style: solid; -fx-border-radius: 15;">
+               <children>
+                  <Label layoutX="7.0" layoutY="14.0" text="Loaned To:" />
+                  <Label layoutX="6.0" layoutY="38.0" text="Loaned On:" />
+                  <TextField fx:id="loanedToTF" layoutX="81.0" layoutY="9.0" prefHeight="17.0" prefWidth="110.0" />
+                  <TextField fx:id="loanedOnTF" layoutX="81.0" layoutY="33.0" prefHeight="17.0" prefWidth="110.0" />
+                  <Button fx:id="loanButton" layoutX="17.0" layoutY="60.0" mnemonicParsing="false" onAction="#loanOnAction" text="Loan" />
+               </children>
+            </Pane>
+            <Pane layoutX="29.0" layoutY="18.0" prefHeight="106.0" prefWidth="200.0" style="-fx-border-width: 1; -fx-border-style: solid; -fx-border-radius: 15;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Title:" />
+                  <Label layoutX="14.0" layoutY="42.0" text="Format:" />
+                  <TextField fx:id="titleTF" layoutX="62.0" layoutY="9.0" prefHeight="27.0" prefWidth="127.0" />
+                  <TextField fx:id="formatTF" layoutX="62.0" layoutY="37.0" prefHeight="27.0" prefWidth="127.0" />
+                  <Button layoutX="16.0" layoutY="71.0" mnemonicParsing="false" onAction="#addOnAction" text="Add" />
+               </children>
+            </Pane>
+            <Button layoutX="121.0" layoutY="136.0" mnemonicParsing="false" onAction="#removeOnAction" text="Remove" />
+            <Button layoutX="126.0" layoutY="184.0" mnemonicParsing="false" onAction="#returnOnAction" text="Return" />
+            <RadioButton fx:id="byTitleButton" layoutX="79.0" layoutY="352.0" mnemonicParsing="false" onAction="#byTitleButtonOnAction" text="By Title" />
+            <RadioButton fx:id="byDateLoanedButton" layoutX="79.0" layoutY="379.0" mnemonicParsing="false" onAction="#byDateLoanedOnAction" text="By Date Loaned" />
+            <Label layoutX="29.0" layoutY="361.0" text="Sort:" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
